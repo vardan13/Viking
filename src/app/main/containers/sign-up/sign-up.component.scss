@@ -1,6 +1,14 @@
-
 :host{
-    ion-item {
+    .align {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 90px 1px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+      ion-item {
         // --border-color: transparent!important;
         --highlight-height: 0;
         // border: 2px solid #dedede;
@@ -11,6 +19,4 @@
         }
  
     }
- 
-
 }

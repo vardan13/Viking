@@ -1,0 +1,151 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="align" color="danger" >
+      <b>Order-List</b>
+      <div style="font-size: 12px;">
+        <b>
+          < &nbsp;&nbsp;&nbsp;&nbsp; Nov 24th - Dec 1st &nbsp;&nbsp;&nbsp;&nbsp;>
+        </b>
+      </div>
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+
+  <ion-card>
+    <ion-card-header style="background-color: lightgrey;">
+      <ion-card-title color="danger" class="ion-text-center">Monday, Nov 25th</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+      <!-- <h5><b>Monday, November 25th</b></h5> -->
+      <ion-grid class="ion-no-padding">
+        <ion-row class="ion-margin-top">
+          <ion-col class="ion-no-padding" size="3">
+            <ion-card-title>
+              <ion-avatar item-start>
+                <img src="../../../../assets/Img/Cuisine2.jpg">
+              </ion-avatar>
+            </ion-card-title>
+          </ion-col>
+          <ion-col class="ion-align-self-center" size="6">
+            <span color="danger">1 Italian crusty bread</span>
+
+
+          </ion-col>
+          <ion-col class="ion-align-self-center" size="3">
+            <span class="ion-float-right">$22</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <span>Special Requests: Extra Tomato Sauce</span>
+          </ion-col>
+
+        </ion-row>
+
+      </ion-grid>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header style="background-color: lightgrey;">
+      <ion-card-title color="danger" class="ion-text-center">Tuesday, Nov 26th</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+      <!-- <h5><b>Monday, November 25th</b></h5> -->
+      <ion-grid class="ion-no-padding">
+        <ion-row class="ion-margin-top">
+          <ion-col class="ion-no-padding" size="3">
+            <ion-card-title>
+              <ion-avatar item-start>
+                <img src="../../../../assets/Img/Cuisine3.jpg">
+              </ion-avatar>
+            </ion-card-title>
+          </ion-col>
+          <ion-col class="ion-align-self-center" size="6">
+            <span color="danger">2 Sesame Noodle Bowl</span>
+
+
+          </ion-col>
+          <ion-col class="ion-align-self-center" size="3">
+            <span class="ion-float-right">$80</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <span>Special Requests: Extra Extra cheese</span>
+          </ion-col>
+
+        </ion-row>
+
+      </ion-grid>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header style="background-color: lightgrey;">
+      <ion-card-title color="danger" class="ion-text-center">Wednesday, Nov 27th</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+      <!-- <h5><b>Monday, November 25th</b></h5> -->
+      <ion-grid class="ion-no-padding">
+        <ion-row class="ion-margin-top">
+          <ion-col class="ion-no-padding" size="3">
+            <ion-card-title>
+              <ion-avatar item-start>
+                <img src="../../../../assets/Img/Cuisine4.jpg">
+              </ion-avatar>
+            </ion-card-title>
+          </ion-col>
+          <ion-col class="ion-align-self-center" size="6">
+            <span color="danger">2 Spicy Penne Pasta</span>
+
+
+          </ion-col>
+          <ion-col class="ion-align-self-center" size="3">
+            <span class="ion-float-right">$44</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <span>Special Requests: Extra Extra cheese</span>
+          </ion-col>
+
+        </ion-row>
+
+      </ion-grid>
+
+    </ion-card-content>
+  </ion-card>
+ 
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button [routerLink]="[ '/main/dashboard-menu' ]">
+          <ion-icon name="pizza"></ion-icon>
+          <ion-label>Menu</ion-label>
+        </ion-tab-button>
+        <ion-tab-button>
+          <ion-icon color="danger" name="list-box"></ion-icon>
+          <ion-label color="danger">Orders</ion-label>
+        </ion-tab-button>
+        <ion-tab-button (click)="logoutMsg()">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Account</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

@@ -1,14 +1,75 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>
       Ionic Blank
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+
+<ion-content class="ion-padding" >
+  <!-- <form id="login-form" class="form" action="" method="post"  > -->
+
+  <!-- <div padding> -->
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <img class="logo" src="../../assets/Img/icons8-viking-helmet-100 (1).png" height="170px" width="170px" />
+      </ion-col>
+    </ion-row>
+    <ion-row style="margin-top: -35px;">
+        <ion-col class="ion-text-center">
+          <h3><b>VIKING FOOD</b></h3>
+</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <!-- <ion-list > -->
+          <ion-card>
+          <ion-item>
+          
+            <ion-input type="text" placeholder="Email Address"  ></ion-input>
+           
+          </ion-item>
+        </ion-card>
+        <ion-card class="ion-margin-top">
+          <ion-item>
+            
+            <ion-input type="password" placeholder="Password"   ></ion-input>
+           
+          </ion-item>
+        </ion-card>
+        <!-- </ion-list> -->
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col class="text-right" color="primary" (click)="forgetpassword()" >
+          <div style="font-size: 10px; margin-right: 10px;"><b>Forgot Password?</b></div>
+        </ion-col>
+      </ion-row>
+    <ion-row>
+  
+      <ion-col >
+        
+          <ion-button color="medium" expand="block" (click)="submitusername()">
+             Log In
+           </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin-top">
+        <ion-col class="text-center" color="primary"  >
+            <div style="font-size: 10px;"><b>Don't have an account?</b></div>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+  
+          <ion-col >
+            
+              <ion-button color="danger" expand="block" (click)="SignUp()">
+                 Sign Up
+               </ion-button>
+          </ion-col>
+        </ion-row>
+  <!-- </div> -->
+  <!-- </form> -->
 </ion-content>
+

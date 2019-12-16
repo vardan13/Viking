@@ -24,3 +24,70 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.alert-button-inner.sc-ion-alert-md {
+    background-color: #f04141; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+// .alert-input.sc-ion-alert-md {
+    .alert-input.sc-ion-alert-md {
+        margin-right: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 7px;
+        border-radius: 5px;
+        border: 1px solid var(--ion-color-step-150, #d9d9d9);
+        border-bottom: 1px solid var(--ion-color-step-150, #d9d9d9);
+        color: var(--ion-text-color, #000);
+    }
+    .alert-input.sc-ion-alert-md:focus {
+        margin-bottom: 4px;
+        border-bottom: 2px solid var(--ion-color-medium,#f04141 ) !important;
+    }
+span {cursor:pointer; }
+.number{
+    margin:100px;
+}
+.minus, .plus{
+    width:20px;
+    height:20px;
+    background:#f2f2f2;
+    border-radius:4px;
+    // padding:8px 5px 8px 5px;
+    border:1px solid #ddd;
+display: inline-block;
+vertical-align: middle;
+text-align: center;
+}
+.i{
+    height:34px;
+width: 50px;
+text-align: center;
+font-size: 26px;
+    border:1px solid #ddd;
+    border-radius:4px;
+display: inline-block;
+vertical-align: middle;
+
+} 
+.alert-input-group.sc-ion-alert-md, .alert-message.sc-ion-alert-md {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 0px !important;
+     padding-bottom: 0px !important; 
+}
+.Toast{
+    margin-top: -50px !important
+}
+// .AddedToCart{
+//    margin-bottom: 2px;
+// }

@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="align" color="danger">
+        <b>Account sign Up</b>
+        </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <img class="logo" src="../../assets/Img/icons8-viking-helmet-100 (1).png" height="100px" width="100px" />
+    </ion-col>
+  </ion-row>
+  <ion-row style="margin-top: -35px;">
+      <ion-col class="ion-text-center">
+        <h3><b>VIKING FOOD</b></h3>
+</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <!-- <ion-list > -->
+      <ion-card>
+        <ion-item>
+
+          <ion-input type="text" placeholder="First Name"></ion-input>
+
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+
+          <ion-input type="text" placeholder="Last Name" ></ion-input>
+
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+
+          <ion-input type="text" placeholder="Email Address"></ion-input>
+
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+
+          <ion-input type="text" placeholder="Password" ></ion-input>
+
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item>
+
+          <ion-input type="text" placeholder="Phone Number" ></ion-input>
+
+        </ion-item>
+      </ion-card>
+
+      <!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-row>
+
+    <ion-col>
+
+      <ion-button color="danger" expand="block" [routerLink]="[ '/main/info' ]">
+        Create Account
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <!-- </div> -->
+  <!-- </form> -->
+</ion-content>

@@ -1,0 +1,118 @@
+<ion-header>
+    <ion-toolbar class="ion-text-center">
+ 
+      <ion-title color="danger" >
+      <b>On The Menu</b>
+      </ion-title>
+      <div style="color:#f04141;font-size: 12px;margin-top: 5px;">
+       <span>
+         <b>
+      < &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monday,&nbsp; Nov 25th &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >
+    </b>
+        </span> 
+       </div>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding" >
+ 
+    <ion-card>
+        <img src="../../../../assets/Img/Cuisine2.jpg"/>
+        <ion-card-content>
+          <ion-grid>
+          <ion-row  >
+            <ion-col size="10">
+                <ion-card-title>
+           <b>Italian crusty bread</b>
+            </ion-card-title>
+          <p>
+              Sliced mozzarella, tomatoes and basil.
+          </p>
+          <p >
+            $22
+          </p>
+            </ion-col>
+            <ion-col (click)="AddToCartPopup('Italian crusty bread')"  class="ion-align-self-center" size="2">
+           
+                <ion-icon style="font-size: 40px;" color="danger" name="cart"></ion-icon>
+      
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+          <img src="../../../../assets/Img/Cuisine3.jpg"/>
+          <ion-card-content>
+            <ion-grid>
+            <ion-row >
+              <ion-col size="10">
+                  <ion-card-title>
+             <b>Sesame Noodle Bowl</b>
+              </ion-card-title>
+            <p>
+                Serve mixed olives with a little Prep black pepper.
+            </p>
+            <p style="color:#f04141">
+              <b>Sold Out!</b>
+            </p>
+              </ion-col>
+              <ion-col  class="ion-align-self-center" size="2">
+             
+                  <ion-icon style="font-size: 40px;"  name="cart"></ion-icon>
+        
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+            <img src="../../../../assets/Img/Cuisine4.jpg"/>
+            <ion-card-content>
+              <ion-grid>
+              <ion-row >
+                <ion-col size="10">
+                    <ion-card-title>
+               <b>Spicy Penne Pasta </b>
+                </ion-card-title>
+              <p>
+                  Whole wheat penne pasta, virgin olive oil, cloves garlic, Spanish pepper
+              </p>
+              <p>
+                $18
+              </p>
+                </ion-col>
+                <ion-col (click)="AddToCartPopup('Spicy Penne Pasta')"  class="ion-align-self-center" size="2">
+               
+                    <ion-icon style="font-size: 40px;" color="danger" name="cart"></ion-icon>
+          
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            </ion-card-content>
+          </ion-card>
+
+
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button >
+            <ion-icon color="danger" name="pizza"></ion-icon>
+              <ion-label color="danger">Menu</ion-label>
+          </ion-tab-button>
+          <ion-tab-button  [routerLink]="[ '/main/orders' ]">
+         <ion-icon  name="list-box"></ion-icon>            
+               <ion-label >Orders</ion-label>
+          </ion-tab-button>
+          <ion-tab-button (click)="logoutMsg()">
+              <ion-icon name="person"></ion-icon> 
+             <ion-label>Account</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>

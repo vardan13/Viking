@@ -1,5 +1,7 @@
 {
   "name": "Viking-Food",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

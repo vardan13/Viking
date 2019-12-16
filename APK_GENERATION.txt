@@ -1,0 +1,27 @@
+*****************************IN C:\Program Files (x86)\Java\jdk1.8.0_191\bin*************************************************
+keytool -genkey -v -keystore Viking-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias Viking
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore Viking-key.jks E:\weoto\Viking-Food\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk Viking
+
+
+
+
+
+******************************In C:\Users\Vardan\AppData\Local\Android\sdk\build-tools\25.0.3> *****************************************
+zipalign -v 4 E:\weoto\Viking-Food\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk Viking_Food.apk
+
+apksigner verify Viking_Food.apk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
